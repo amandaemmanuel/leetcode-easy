@@ -1,3 +1,12 @@
+#
+# Problem: 
+# Given an array of integers, return indices of the 2 numbers such that they add up to
+# a specific target. You may assume that each input would have exactly 1 solution, and you
+# may not use the same element twice
+#
+# Full problem details: https://leetcode.com/problems/two-sum/
+#
+
 class Calculations
     
     def initialize
@@ -35,13 +44,3 @@ end
 
 test = Calculations.new
 test.compare_to_target 14
-
-
-
-# @array[i+1..@array.size].each_with_index {|num2, j|
-                #     sum = value + num2
-                #     if sum == target #identifying a match & printing their values
-                #         puts "We have a match! At values #{value}, #{num2} at [#{i}, #{j+1}]"
-                #         return @match = 1
-                #     end
-                # }
